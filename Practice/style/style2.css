@@ -1,0 +1,21 @@
+.input-row {
+
+    margin-bottom: 10px
+}
+.contact-input {
+    display: inline-block;
+    background: whitesmoke;
+    padding: 40px;
+}
+.conact-section {
+    margin-top: 50px;
+}
+.radio-check {
+    color: black;
+}
+.text-color {
+    color: black;
+}
+.contact-input:hover {
+    background: #0ecfed;
+}

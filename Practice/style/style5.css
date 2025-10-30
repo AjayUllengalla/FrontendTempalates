@@ -1,0 +1,44 @@
+/* div.dt-container {
+    margin: 0 auto;
+    width: 80%;
+} */
+.parent {
+    display: flex;
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; */
+    flex-wrap: wrap;
+}
+.child1 {
+    background: yellow;
+    color: black;
+    padding: 10px;
+    align-self: flex-start;
+    
+}
+.child2 {
+    background:green;
+    color: white;
+    padding: 10px;
+}
+.child3 {
+    background: orange;
+    color: white;
+    padding: 10px;
+}
+.child4 {
+    background: violet;
+    color: white;
+    padding: 10px;
+}
+.child5 {
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+.child6 {
+    background: red;
+    color: black;
+    padding: 10px;
+}

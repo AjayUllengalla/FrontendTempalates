@@ -1,0 +1,22 @@
+.parent  {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+}
+.parent:hover {
+    background-color: blue;
+     animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0s; 
+
+}
+.sec {
+display: inline-block;
+  margin: 0 0.5rem;
+}
+/* .sec :hover {
+    
+} *

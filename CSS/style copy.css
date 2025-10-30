@@ -1,0 +1,87 @@
+.service-section {
+    padding: 30px;
+    margin: 30px 0;
+
+}
+.service-content {
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.service1 {
+    text-align: center;
+}
+.service-content img {
+    text-align: center;
+}
+
+.service-content h5 {
+    text-align: center;
+}
+.service-content p {
+    text-align: center;
+}
+.service-img {
+    text-align: center;
+}
+.row2 {
+    margin-top: 10px;
+}
+.service-grid {
+    margin: 10px 0 10px 0;
+    background: blue;
+}
+.service-content1 {
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+.service-content1 a {
+    color: white;
+    text-decoration: none;
+}
+.client-section {
+    background: beige;
+    margin: 20px 0;
+}
+.ser {
+    padding: 20px;
+    text-align: center;
+}
+.cont {
+    padding: 20px;
+    text-align: center;
+}
+.footer-im {
+    margin-bottom: 10px;
+}
+.footer-im img {
+    width: 30px;
+}
+.footer-content li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer-section {
+    background: blue;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer-content1 {
+    margin-top: 40px;
+}
+.footer-content1 li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.offer-content {
+    margin-top: 40px;
+    border: 1px solid white;
+    padding: 20px;
+    width: 200px;
+}
+.contact-us h4 {
+    margin-bottom: 15px;
+}

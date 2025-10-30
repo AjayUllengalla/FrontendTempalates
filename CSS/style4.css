@@ -1,0 +1,190 @@
+.card-image img {
+width: auto;
+}
+.phn-sec {
+    background: #1A120E;
+    color: white;
+    padding: 40px;
+    margin: 30px 0;
+}
+.phn-cont {
+    text-align: center;
+    padding: 20px;
+}
+.service-section {
+    padding: 30px;
+    margin: 30px 0;
+
+}
+.service-content {
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.service1 {
+    text-align: center;
+}
+.service-content img {
+    text-align: center;
+}
+
+.service-content h5 {
+    text-align: center;
+}
+.service-content p {
+    text-align: center;
+}
+.service-img {
+    text-align: center;
+}
+.row2 {
+    margin-top: 10px;
+}
+.service-grid {
+    margin: 10px 0 10px 0;
+    background: #02398c;
+}
+.service-content1 {
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+.service-content1 a {
+    color: white;
+    text-decoration: none;
+}
+.client-section {
+    background: beige;
+    margin: 30px 0 0 0;
+    padding: 40px;
+}
+.ser {
+    padding: 20px;
+    text-align: center;
+}
+.cont {
+    padding: 20px;
+    text-align: center;
+}
+.footer-im {
+    margin-bottom: 10px;
+    
+}
+.footer-im img {
+    width: 30px;
+}
+.footer-content li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer-section {
+    background: #02398c;
+    color: white;
+    padding: 40px;
+    /* margin-top: 30px; */
+}
+.footer-content1 {
+    margin-top: 40px;
+
+}
+.footer-im li {
+    margin-bottom: 5px;
+    text-align: start;
+    list-style: none;
+}
+.footer-im i {
+    margin-bottom: 10px; 
+    color: yellow;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 100%;
+    background: black;
+    gap: 20px;
+
+    
+}
+.footer-content1 li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.offer-content {
+    
+    border: 1px solid white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.contact-us h4 {
+    margin-bottom: 15px;
+}
+.card-body1:hover {
+    background-color: black;
+    color: white;
+}
+.copyright-sec {
+    background-color: #003789;
+    color: white;
+    padding: 10px;
+    border-top: 1px solid  #003789;
+    
+}
+.copyright-sec1 {
+    text-align: center;
+}
+
+@media(min-width: 320px) and (max-width: 575px) {
+    
+     .cont img {
+        margin-bottom: 25px;
+    }
+    .card-imge {
+        margin-bottom: 20px;
+        
+    }
+}
+@media(min-width: 576px) and (max-width: 767px) {
+    .card-imge {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}
+@media(min-width: 768px) and (max-width: 991px) {
+
+   .cont img {
+        margin-bottom: 25px;
+    }
+    .card-imge {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .team-sec{
+        margin-top: 20px;
+    }
+    .card-image1 {
+        width: 100%;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    
+    .tower-image img {
+        width: 100%;
+    }
+  
+    .list-styling {
+        width: 100%;
+        display: inline;
+    }
+    .serv1 {
+        margin-bottom: 20px;
+    }
+    .offer-content {
+    margin-top: 20px;
+}
+}
+    

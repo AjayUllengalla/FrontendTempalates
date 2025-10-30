@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .child1 {
+            background-color: black;
+            color: white;
+        }
+        .child2 {
+            background-color: yellow;
+            color: black;
+        }
+        .child3 {
+            background-color: green;
+            color: white;
+        }
+        .child4 {
+            background-color: red;
+            color: white;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: bisque;
+            border-radius: 100%;
+            text-align: center;
+            transition: 0.5s ease;
+        }
+        .icon i {
+            opacity: 0;
+        }
+        .icon i:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child1">
+            <H2>Hello</H2>
+        </div>
+        <div class="child2">
+            <H2>Hello</H2>
+        </div>
+        <div class="child3">
+            <H2>Hello</H2>
+        </div>
+        <div class="child4">
+            <H2>Hello</H2>
+        </div>
+    </div>
+
+
+    <div class="icon">
+        <div> <i class="fa-brands fa-facebook" style="font-size: 40px;"></i></div>
+        <div> <i class="fa-duotone fa-solid fa-user" style="font-size: 40px;"></i></div>
+        
+        
+    </div>
+    
+</body>
+</html>
