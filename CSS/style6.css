@@ -194,5 +194,8 @@
     .tower-image img {
         width: 100%;
     }
-    
+     .list-styling {
+        width: 100%;
+        display: inline;
+    }
 }
