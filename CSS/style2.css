@@ -3,6 +3,69 @@ boody {
     margin: 0;
 }
 
+.facebook {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+}
+.twitter {
+     width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+}
+.google {
+     width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+}
+.linkedin {
+     width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+   
+    
+}
+.linkedin i {
+    opacity: 0;
+}
+.linkedin i:hover {
+    opacity: 1;
+}
+.facebook i {
+    opacity: 0;
+}
+.facebook i:hover {
+    opacity: 1;
+}
+.google i {
+    opacity: 0;
+}
+.google i:hover {
+    opacity: 1;
+}
+.twitter i {
+    opacity: 0;
+}
+.twitter i:hover {
+    opacity: 1;
+}
+
 .expert-handyman {
     /* margin: 30px 0; */
     background: black;
