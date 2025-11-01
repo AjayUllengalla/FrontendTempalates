@@ -2,7 +2,10 @@ boody {
     padding: 0;
     margin: 0;
 }
-
+.social-media {
+    padding: 10px;
+    background-color: #02398c;
+}
 .facebook {
     width: 30px;
     height: 30px;
