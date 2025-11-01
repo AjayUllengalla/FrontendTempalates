@@ -224,5 +224,8 @@
     .cont img {
         margin-bottom: 25px;
     }
-    
+     .list-styling {
+        width: 100%;
+        display: inline;
+    }
 }
