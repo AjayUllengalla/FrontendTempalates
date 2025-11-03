@@ -89,3 +89,31 @@ res = fruits.map((ele) => {
     return ele.indexOf("Apple");
 })
 console.log(res);
+
+
+//sort
+let fruitName =["Kiwi","Mango","orange","Apple"];
+console.log(fruitName.sort());
+let nums = [4,2,5,6,1,7,15,8,11,9];
+
+let newArray = nums.sort();
+console.log(newArray);
+newArray = nums.sort((x,y) =>{
+    if(x > y){
+        return 1
+    } if(x < y){
+        return -1
+    } if( x == y){
+        return 0
+    }
+});
+console.log(newArray);
+
+//slice 
+  newArray = nums.slice(5);
+  console.log(newArray);
+console.log(nums.slice(1,4));
+console.log(" ")
+str = "Hello JavaScript";
+console.log(str.slice(3,7));
+//
