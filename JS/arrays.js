@@ -89,7 +89,16 @@ res = fruits.map((ele) => {
     return ele.indexOf("Apple");
 })
 console.log(res);
-
+let details = [
+    {
+        studName:"Ajay",
+        age:22,
+    }
+];
+res = details.map((ele) => {
+    return ele.studName;
+});
+console.log(res);
 
 //sort
 let fruitName =["Kiwi","Mango","orange","Apple"];
