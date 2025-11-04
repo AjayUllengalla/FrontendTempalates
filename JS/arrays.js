@@ -116,4 +116,15 @@ console.log(nums.slice(1,4));
 console.log(" ")
 str = "Hello JavaScript";
 console.log(str.slice(3,7));
-//
+
+//join
+console.log(fruitName.join("-"));
+console.log(fruitName.join(","));
+console.log(fruitName.join("/"));
+
+//reverse
+
+let str1 = ["Hello","Apple","Bat","Ant"];
+console.log(str1.reverse());
+let arrays =[2,6,15,1,46,25,86,10];
+console.log(arrays.reverse()); //reversing the array
