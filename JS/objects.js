@@ -62,5 +62,30 @@ class person {
 }
 let p1 = new person("Ajay",22,"Leicester",66562344);
 console.log(p1)
-p1.coure = "Msc";
+p1.course = "Msc";
 console.log(p1);
+console.log(p1.course)
+
+//shallowcopy
+let users = {
+    userName: "ajay",
+    age : 22,
+    addree: {
+        Country: "Scotland",
+    }
+};
+
+let users2 = {...users};
+users2.age = 32;
+users2.userName="Ajjith";
+
+console.log(users);
+console.log(users2);
+
+// using deepcopy
+let users3  = structuredClone(users);
+users3.userName="Ajju";
+users3.age = 25;
+users3.addree.Country="London";
+console.log(users);
+console.log(users3);
