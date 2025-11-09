@@ -1,6 +1,48 @@
 .card-image img {
 width: auto;
 }
+.card-style img{
+    position: relative;
+    opacity: 1;
+    display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+     transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-style:hover img{
+    opacity: 0.2;
+    background-color: black;
+   
+}
+.card-style:hover .social-icons {
+    color: black;
+    opacity: 1;
+}
+.fb:hover  {
+    color: 	#1877F2;
+}
+.tw:hover {
+    color: blue;
+}
+.google:hover {
+    color: #FBBC05;
+}
+.linkdin:hover{
+    color: #003789;
+}
+
+
 .phn-sec {
     background: #1A120E;
     color: white;
@@ -168,6 +210,13 @@ width: auto;
     .card-image1 {
         width: 100%;
     }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
 }
 
 @media(min-width: 992px) and (max-width: 1200px) {
@@ -186,5 +235,12 @@ width: auto;
     .offer-content {
     margin-top: 20px;
 }
+.footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
 }
     
