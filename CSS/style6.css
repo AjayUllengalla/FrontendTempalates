@@ -186,6 +186,13 @@
    .tower-image img {
         width: 100%;
     }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
     
 }
 
@@ -198,4 +205,11 @@
         width: 100%;
         display: inline;
     }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
 }

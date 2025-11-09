@@ -212,6 +212,13 @@
     .cont img {
         margin-bottom: 25px;
     }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
     
 }
 @media(min-width: 992px) and (max-width: 1200px) {
@@ -228,4 +235,11 @@
         width: 100%;
         display: inline;
     }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
 }

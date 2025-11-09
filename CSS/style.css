@@ -150,7 +150,15 @@ body {
     }
     .offer-content {
     margin-top: 20px;
-}
+    }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
+
 }
 @media(min-width: 992px) and (max-width: 1200px) {
     .list-styling {
@@ -162,5 +170,12 @@ body {
     }
     .offer-content {
     margin-top: 20px;
-}
+    }
+    .footer-im i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 30px;
+    text-align: center;
+  }
 }
