@@ -25,3 +25,42 @@ setTimeout(()=>{
 console.log("Middle"); //syncronous
 
 
+
+console.log(" ");
+//promises
+
+let promise = new Promise((resolve,reject)=> {
+    resolve("Hello Promise Resolved");
+});
+promise.then((res) => {
+    console.log(res)  //resolved promise used then for result
+});
+
+//reject promise
+
+let promise1 = new Promise((resolve,reject) => {
+    reject("Something Went Wrong");
+});
+
+promise1.catch((error) =>{
+    console.log(error); // rejected promise catched using catch()
+});
+
+//example with Condition Check
+
+let a = 10;
+let b=11;
+let promise2 = new Promise((resolve,reject)  => {
+    if(a==b){
+        resolve("Condtion is Satisfied");
+    } else {
+        reject("Condition not satisfied"); //here condition is false
+    }
+});
+
+promise2.then((res) => {
+    console.log(res);
+});
+promise2.catch((error) => {
+    console.log(error); //we get error that condition not satisfied throws error
+})
