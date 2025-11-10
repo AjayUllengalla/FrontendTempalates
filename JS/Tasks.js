@@ -56,3 +56,28 @@ let result = numbers.map((value) => {
     }
 })
 console.log(result)
+
+//You have an array of numbers and you need to filter out all even numbers. How would you do  this using filter()?
+
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result2 = numbers2.filter((value) => {
+    if(value % 2 !=0){
+        return value;
+    }
+})
+
+console.log(result2)
+
+//You have an array of numbers, and you need to find the sum of all the even numbers in the array. How would you do that?
+
+const numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let res3 = numbers3.filter((value) => {
+    if(value % 2 ==0){
+        return value
+    }
+}).reduce((acc,curr) => {
+    return acc+curr
+},0)
+console.log(res)
+
