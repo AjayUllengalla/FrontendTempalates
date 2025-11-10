@@ -1,5 +1,16 @@
 // merging two arrays into array of objects
 
+const names = ['Alice', 'Bob', 'Charlie']; 
+const ages = [25, 30, 35];
+
+let [name1,name2,name3]=names;
+let[age1,age2,age3] = ages;
+
+
+let arrayOfObjects = [{name1,age1},{name2,age1},{name3,age2}];
+console.log(arrayOfObjects)
+
+
 //finding element index if not found return -1
 
 let arr =[2,4,5,6,7,8,"arr","bb","cc"]
@@ -13,7 +24,7 @@ let res = ((arr,value) => {
 });
 console.log(res(arr,9));
 
-//3.	How would you determine whether a variable is a number, a string, or an boolean  in JavaScript?
+//How would you determine whether a variable is a number, a string, or an boolean  in JavaScript?
 
 let str = "Hello JavaScript";
 let n=10;
@@ -33,7 +44,7 @@ console.log(newArray)
 
 let newArray1 = arrays.flat();
 console.log(newArray1)
-
+console.log(" ")
 // remove any negative numbers and square the remaining numbers. How would you do this using map()
 
 const numbers = [1, -2, 3, -4, 5,6];
@@ -45,7 +56,7 @@ let newArrays = numbers.map((ele) => {
     return value > 0;
 })
 console.log(newArrays)
-
+console.log(" ")
 //You want to increment every number in the array by 1, but only if the number is greater than 10. How would you do this using map()?
 const numbers1 = [5, 12, 8, 15, 3, 20];
 let result = numbers.map((value) => {
@@ -56,7 +67,7 @@ let result = numbers.map((value) => {
     }
 })
 console.log(result)
-
+console.log(" ")
 //You have an array of numbers and you need to filter out all even numbers. How would you do  this using filter()?
 
 
@@ -68,7 +79,7 @@ let result2 = numbers2.filter((value) => {
 })
 
 console.log(result2)
-
+console.log(" ")
 //You have an array of numbers, and you need to find the sum of all the even numbers in the array. How would you do that?
 
 const numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -79,5 +90,21 @@ let res3 = numbers3.filter((value) => {
 }).reduce((acc,curr) => {
     return acc+curr
 },0)
-console.log(res)
+console.log(res3)
+console.log(" ")
 
+//You have an array of user objects, each with a status property. You need to filter out all users who are not active (status is 'inactive'). How would you do this using filter()?
+
+
+const users = [ 
+{ name: 'Alice', status: 'active' }, 
+{ name: 'Bob', status: 'inactive' }, 
+{ name: 'Charlie', status: 'active' }, 
+{ name: 'David', status: 'inactive' } 
+];
+let result5 = users.filter((ele)=> {
+    if(ele.status == "active") {
+        return ele
+    }
+})
+console.log(result5)
