@@ -42,8 +42,8 @@ boody {
     border-radius: 100%;
     color: white;
    
-    
 }
+/* }
 .linkedin i {
     opacity: 0;
 }
@@ -67,7 +67,7 @@ boody {
 }
 .twitter i:hover {
     opacity: 1;
-}
+} */
 
 .expert-handyman {
     /* margin: 30px 0; */
@@ -309,7 +309,14 @@ background-color: black;
     text-align: center;
 }
 
-
+.nav-link:hover {
+   
+    font-weight: 500;
+    background-color: aliceblue;
+     color: orange !important;
+     /* transition: 0.1s; */
+     border-radius: 6px;
+}
 
 
 
