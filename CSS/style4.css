@@ -178,6 +178,15 @@ width: auto;
     text-align: center;
 }
 
+.nav-link:hover {
+   
+    font-weight: 500;
+    background-color: aliceblue;
+     color: orange !important;
+     /* transition: 0.1s; */
+     border-radius: 6px;
+}
+
 @media(min-width: 320px) and (max-width: 575px) {
     
      .cont img {
