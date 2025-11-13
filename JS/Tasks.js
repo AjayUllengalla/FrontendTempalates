@@ -119,7 +119,13 @@ let result5 = users.filter((ele)=> {
 })
 console.log(result5)
 
+//rite a function createCounter. It should accept an initial integer init. It should return an object with three functions.
 
+// The three functions are:
+
+// increment() increases the current value by 1 and then returns it.
+// decrement() reduces the current value by 1 and then returns it.
+// reset() sets the current value to init and then returns it.
 
 function createCounter(count){
        function increment() {
@@ -144,3 +150,15 @@ let counter = createCounter(5);
 console.log(counter.reset());
 console.log(counter.increment())
 console.log(counter.decrement())
+
+//Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
+
+function outer(count) {
+    function inner() {
+        return count++;
+    } return inner
+}
+let countResult = outer(0);
+console.log(countResult())
+console.log(countResult())
+console.log(countResult())
