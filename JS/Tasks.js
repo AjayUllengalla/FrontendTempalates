@@ -2,27 +2,37 @@
 
 const names = ['Alice', 'Bob', 'Charlie']; 
 const ages = [25, 30, 35];
+let merged = [];
+for(let i=0;i<names.length;i++){
+    merged.push({name:names[i],age:ages[i]});
 
-let [name1,name2,name3]=names;
-let[age1,age2,age3] = ages;
-
-
-let arrayOfObjects = [{name1,age1},{name2,age1},{name3,age2}];
-console.log(arrayOfObjects)
+}
+console.log(merged);
 
 
 //finding element index if not found return -1
 
-let arr =[2,4,5,6,7,8,"arr","bb","cc"]
+// let arr =[2,4,5,6,7,8,"arr","bb","cc"]
 
-let res = ((arr,value) => {
-    if(arr.includes(value)) {
-        return arr.indexOf(value);
-    } else {
-        return -1;
-    }
-});
-console.log(res(arr,9));
+// let res = ((arr,value) => {
+//     if(arr.includes(value)) {
+//         return arr.indexOf(value);
+//     } else {
+//         return -1;
+//     }
+// });
+// console.log(res(arr,9));
+
+const fruits = ['apple', 'banana', 'cherry'];
+console.log(fruits.indexOf("app"))
+
+// second way
+// if(arr.includes(7)){
+//     console.log(arr.indexOf(7));
+// } else{
+//     console.log(arr.indexOf(7))
+// }
+// console.log(" ")
 
 //How would you determine whether a variable is a number, a string, or an boolean  in JavaScript?
 
@@ -108,3 +118,29 @@ let result5 = users.filter((ele)=> {
     }
 })
 console.log(result5)
+
+
+
+function createCounter(count){
+       function increment() {
+           count++;
+           return count
+       }
+       let reset = function () {
+           return count =count;
+       }
+       function decrement() {
+           count--;
+           return count
+       }
+      return {
+          increment,
+          reset,
+          decrement
+      }
+}
+
+let counter = createCounter(5);
+console.log(counter.reset());
+console.log(counter.increment())
+console.log(counter.decrement())
