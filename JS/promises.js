@@ -12,6 +12,22 @@ let pr3 = new Promise((res,rej) => {
     console.log(res)
  })
 
- Promise.allSettled([pr1,pr2,pr3]).then((res)=> {
+ Promise.allSettled([pr1,pr2,pr3]).then((res)=> { //allSettled Method
     console.log(res)
  })
+
+//race
+ let pr4 = new Promise((res,rej) => {
+    res("Hello Promise1 Resolved") 
+},500);
+
+let pr5 = new Promise((res,rej) => {
+    rej("Hello Promise2 Rejected")
+},2000)
+let pr6 = new Promise((res,rej) => {
+    res("Hello Promise3 Resolved");
+},1000)
+
+Promise.race([pr4,pr5,pr6]).then((res)=> {
+    console.log(res)
+})
