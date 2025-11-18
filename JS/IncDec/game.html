@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        .divCl{
+            background: fixed;
+            text-align: center;
+            margin-top: 25%;
+        }
+        .inner {
+            padding: 30px;
+            background: whitesmoke;
+            display: inline-block;
+        }
+        .btn{
+            font-size: 25px;
+            background-color: aliceblue;
+            padding: 10px;
+            
+            
+        }
+        .btn:hover{
+            color: white;
+            background-color: orange;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="divCl">
+        <div class="inner">
+        <h1 id="ele">0</h1>
+        <button onclick="increment()" class="btn">Increment</button>
+        <button onclick="decrement()"class="btn">Decrement</button>
+        <button onclick="reset()" class="btn">reset</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    let count =0;
+    function increment() {
+        setTimeout(()=> {
+            document.getElementById("ele").innerHTML = count;
+            count++;
+            
+        },200)
+    }
+
+    function decrement(){
+        setTimeout(()=> {
+            document.getElementById("ele").innerHTML = --count;
+           
+        },200)
+    }
+
+    function reset(){
+        setTimeout(()=> {
+            document.getElementById("ele").innerHTML = 0
+            count =0;
+        },200)
+    }
+</script>
+</html>
