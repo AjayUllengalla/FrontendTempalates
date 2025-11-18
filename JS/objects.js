@@ -27,10 +27,12 @@ function user (name,age,city){
 
 let user1 = new user("Ajay",22,"Hyderabad");
 let user2 = new user("Ajju",21,"UK");
+let user6 = new user("Charan",23,"Soctland")
 console.log(user1);
 console.log(user2);
 console.log(user2.city);
 console.log(user1.city);
+console.log(user1,user2,user6)
 
 //objec.create
 
