@@ -17,3 +17,8 @@ function start(){
 function stop() {
     clearInterval(objStop);
 }
+
+document.getElementById("items").addEventListener("click",(e)=>{
+let terget =e.target.textContent
+console.log(terget)
+})
