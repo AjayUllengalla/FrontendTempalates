@@ -1,0 +1,45 @@
+ .back {
+        text-align: center;
+        background-color: aquamarine;
+        display: inline-block;
+        padding: 30px;
+        margin-top: 23%;
+        margin-left: 40%;
+    }
+    #to-add {
+        display: flex;
+        gap: 10px;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+    #input {
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #list {
+        /* margin-top: 25%; */
+        margin-top: 20px;
+        /* text-align: center; */
+        list-style: none;
+        text-align: center;
+    }
+    .li-items {
+        background-color: aliceblue;
+        border-radius: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .btn {
+        background-color: aliceblue;
+        padding: 10px;
+        font-weight:500;
+        
+    }
+    /* .btn:hover {
+        background-color: red;
+    } */
