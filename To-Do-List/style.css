@@ -1,10 +1,16 @@
+ body {
+    background: aqua;
+ }
+ 
  .back {
-        text-align: center;
-        background-color: aquamarine;
+        /* text-align: center; */
+        background-color: white;
         display: inline-block;
         padding: 30px;
         margin-top: 23%;
         margin-left: 40%;
+        border-radius: 10px;
+        
     }
     #to-add {
         display: flex;
@@ -26,16 +32,17 @@
         margin-top: 20px;
         /* text-align: center; */
         list-style: none;
-        text-align: center;
     }
     .li-items {
-        background-color: aliceblue;
+        background-color: whitesmoke;
         border-radius: 20px;
         margin-top: 10px;
-        text-align: center;
+        text-align: left;
+        padding: 10px;
     }
     .btn {
-        background-color: aliceblue;
+        background-color: green;
+        color: whitesmoke;
         padding: 10px;
         font-weight:500;
         

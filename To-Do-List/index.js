@@ -11,8 +11,7 @@ let listItem;
         listItem.textContent = text 
         document.getElementById("list").appendChild(listItem)
          listItem.classList.add("li-items")
-          let btn2 = document.createElement("button")
+    })
+    let btn2 = document.createElement("button")
     btn2.textContent="Delete"
     document.getElementsByClassName("li").appendChild(btn2)
-    })
-   
