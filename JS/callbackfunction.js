@@ -17,6 +17,7 @@ sqr(2,function(res) {
 })
 
 //to overcome CallBack Hell we use Promises
+
 function cube(n){
     return new Promise((res,rej) => {
         setTimeout(()=> {

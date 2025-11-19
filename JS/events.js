@@ -18,6 +18,7 @@ function show2() {
     alert('Mouse Event when leave cursor from button')
 }
 
+//Event Bubbling
 let btn4 =document.getElementById("btn4");
 btn4.addEventListener("click",()=>{
     event.stopPropagation()
@@ -28,6 +29,9 @@ let div = document.getElementById("div")
 div.addEventListener("click",()=> {
     alert("Hlelo From Div Event bubbling")  // to stop this we event.stopPropagation
 })
+
+
+//Event Capturing
 
 function showEventCapturing(){
     alert('hello div from Event Capturing')
