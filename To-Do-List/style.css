@@ -47,6 +47,14 @@
         font-weight:500;
         
     }
+    .del-button {
+    
+    padding: 5px;
+    background: aquamarine;
+    border-radius: 10px;
+    font-weight: 600;
+    color: blueviolet;
+}
     /* .btn:hover {
         background-color: red;
     } */
