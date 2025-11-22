@@ -133,6 +133,24 @@ const users5 = {
     return res;
  }
  console.log(newUser(users5,id))
+
+ //Given the following object that contains key-value pairs of product names and their prices, write a function that returns the name of the most expensive product.
+
+ const products = { "Laptop": 1200, "Phone": 800, "Tablet": 600 };
+ let maxPrice=0;
+ let productName;
+
+ function product(products){
+    for(const[name,price] of Object.entries(products)){
+        if(price > maxPrice){
+            maxPrice = price;
+            productName = name;
+        }
+        return productName
+    }
+ }
+console.log(product(products))
+
 //rite a function createCounter. It should accept an initial integer init. It should return an object with three functions.
 
 // The three functions are:
