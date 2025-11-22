@@ -91,3 +91,39 @@ users3.age = 25;
 users3.addree.Country="London";
 console.log(users);
 console.log(users3);
+
+//Object -> Entries-> key -> Values
+
+let fruits2 = {name:"Orange",type:"Bitter"}
+for(const [key,value] of Object.entries(fruits2)){
+    console.log(key);
+    console.log(value);
+    console.log(key,value);
+}
+for(const res in fruits2){
+    console.log(res)
+}
+for(const key in Object.values(fruits2)){
+    console.log(key)
+}
+
+let fruits3 = [{name:"Ajay",age:25},{name:"Mani",age:35}];
+for(const key of fruits3){
+    console.log(key);
+}
+for(const index in fruits3){
+    console.log(index)
+}
+//object->entries
+for(const value of Object.entries(fruits3)){
+    console.log(value)
+}
+for(const value of Object.values(fruits3)){
+    console.log(value)
+}
+let res6 =fruits3.filter((ele) => {
+    if(ele.age>25) {
+        return ele.name
+    }
+})
+console.log(res6)
