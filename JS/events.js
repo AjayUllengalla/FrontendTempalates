@@ -19,6 +19,7 @@ function show2() {
 }
 
 //Event Bubbling
+
 let btn4 =document.getElementById("btn4");
 btn4.addEventListener("click",()=>{
     event.stopPropagation()

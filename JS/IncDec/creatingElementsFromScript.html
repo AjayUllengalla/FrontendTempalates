@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onmouseover="colorChange()">
+    <div id="text">
+
+    </div>
+    <div>
+        <!-- <button onmouseover="colorChange()" id="color">Color</button> -->
+    </div>
+</body>
+
+<script>
+    //creating element from JS add into body 
+    let btn = document.createElement("button")
+    btn.textContent="Submit"
+    document.body.appendChild(btn)
+
+    btn.addEventListener("click",()=> {
+        console.log("Button Clicked")
+        document.body.style.backgroundColor="white"
+    })
+    // we can use id also
+    let btn1 = document.createElement("button")
+    btn1.textContent="SubmitDIv"
+    document.getElementById("text").appendChild(btn1)
+
+    function colorChange(){
+        document.body.style.backgroundColor="red"
+    }
+    </script>
+</html>

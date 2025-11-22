@@ -18,7 +18,9 @@ function stop() {
     clearInterval(objStop);
 }
 
+
+//Event Delegation
 document.getElementById("items").addEventListener("click",(e)=>{
 let terget =e.target.textContent
 console.log(terget)
-})
+}) 

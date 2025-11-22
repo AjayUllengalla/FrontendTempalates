@@ -119,6 +119,20 @@ let result5 = users.filter((ele)=> {
 })
 console.log(result5)
 
+//You have an object that contains a list of users. Write a function to remove a user from the object based on the user ID.
+
+const users5 = { 
+1: { name: "Alice", age: 30 }, 
+2: { name: "Bob", age: 25 }
+ };
+ let id =1;
+
+ function newUser(users,id){
+    let res = {...users};
+    delete res[id];
+    return res;
+ }
+ console.log(newUser(users5,id))
 //rite a function createCounter. It should accept an initial integer init. It should return an object with three functions.
 
 // The three functions are:
@@ -127,7 +141,7 @@ console.log(result5)
 // decrement() reduces the current value by 1 and then returns it.
 // reset() sets the current value to init and then returns it.
 
-function createCounter(count){
+function createCounter(count){  
        function increment() {
            count++;
            return count
