@@ -169,3 +169,77 @@ function average(students){
 
 }
 average(students)
+
+// 1. Write a function that calculates total salary = basic + hra + bonus (10% of basic).
+// Print total salary for each employee.
+// {name: "Raj", basic: 30000, hra: 5000} 
+let employee = [
+    {name: "Raj", basic: 30000, hra: 5000},
+    {name: "Ajay", basic: 35000, hra: 6000} 
+];
+
+function totalSalary(employee){
+    return employee.basic+employee.hra
+}
+
+function employeeSalary(employee){
+    let employeeTotalSalary=[];
+    for(let i=0;i<employee.length;i++){
+        const total = totalSalary(employee[i])
+        let bonus = (total*10) /100;
+       bonus = total + bonus;
+       employeeTotalSalary.push({name:employee[i].name,salary:bonus});
+    }
+    console.log(employeeTotalSalary)
+}
+employeeSalary(employee)
+
+
+// 2. Create a cart array:
+
+// [{item: "Shoes", price: 1200}, {item: "Bag", price: 800}]
+
+// If total > 1500 give 10% discount, else 5%.
+// Print final bill.
+
+let itemsCart = [{item: "Shoes", price: 1200}, {item: "Bag", price: 800}]
+
+function totalPrice(itemsCart){
+    for(let i=0;i<itemsCart.length;i++){
+        return itemsCart[i].price+itemsCart[i+1].price
+    }
+} 
+totalPrice(itemsCart)
+
+function discount(itemsCart){
+    let discount=0;
+    const total = totalPrice(itemsCart)
+
+    if(total > 1500){
+        discount =(total *10)/100;
+        discount = total -discount;
+    } else {
+        discount = (total *5) / 100;
+        discount = total -discount;
+    }
+    console.log("After Discount = "+discount)
+}
+
+ discount(itemsCart)
+
+// 3. Each object has:
+
+// {movie: "KGF", seats: 3, pricePerSeat: 150}
+
+// Write a function to calculate total amount per booking.
+
+let ticketBooking = [{movie: "KGF", seats: 3, pricePerSeat: 150}]
+
+function totalBill(ticketBooking){
+let total =0;
+    for(let i=1;i<=ticketBooking.seats;i++){
+        total= total+ ticketBooking.pricePerSeat;
+    }
+    return total
+}
+console.log(totalBill(ticketBooking))
