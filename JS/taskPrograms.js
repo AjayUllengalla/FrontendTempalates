@@ -31,6 +31,7 @@ let stud= [ {name:"Vamshi",score:75},{name:"Mahesh",score:47} ]
  })  
  console.log(res)
 
+ console.log()
 //  //1. Create an array - students, insert four items, which should be objects and have three properties: name, score1, score2, 
 //     with the following values:
 //     a. Vamshi, 47, 46
@@ -63,18 +64,108 @@ function totalScore(students){
     return students.score1+students.score2;
 }
 
+let resultsOfStudents=[]
 function result(students){
+
     for(let i=0;i<students.length;i++){
-        const total = totalScore(students[i])
-        let degree ="No Degree failed"
+        const total = totalScore(students[i]);
+        let degree = "Failed";
 
         for(let j=0;j<limits.length;j++){
-            if(total >=limits[j]){
-                degree = degrees[j];
+            if(total>=limits[j]){
+                degree = degrees[j]
+                break;
             }
         }
-        console.log(`${students[i].name} total:${total} degree: ${degree}`)
+        resultsOfStudents.push({name:students[i].name,score:total,degree:degree});
     }
+    console.log(resultsOfStudents);
+}
+
+result(students);
+students.push({ name: "Ravi", score1: 50, score2: 52 });
+
+
+let highestScore1 =[];
+function highestScore(students){
+    let temp = totalScore(students[0]);
+    for(let i=0;i<students.length;i++){
+        const total = totalScore(students[i]);
+
+        if(total > temp){
+            highestScore1.push({name:students[i].name,score:total})
+            break;
+        }
+    }
+    console.log("The Highest Scored Student:")
+    console.log(highestScore1)
+}
+
+highestScore(students)
+
+function smallest(students){
+    let lowest=[];
+    let temp = totalScore(students[0]);
+    for(let i=0;i<students.length;i++){
+        const total = totalScore(students[i])
+        if(total < temp){
+            console.log("Lowest Scored Student")
+            lowest.push({name:students[i].name,score:total})
+            break;
+        }
+    }
+    console.log(lowest);
+}
+smallest(students);
+
+function degreeGot(students){
+    let degreeStuden=[];
+    for(let i=0;i<students.length;i++){
+        const total =totalScore(students[i])
+        let degree = "Failed";
+
+        for(let j=0;j<limits.length;j++){
+            if(total>=limits[j]){
+                degree = degrees[j]
+                break;
+            }
+        }
+        if(degree === 'A' || degree === 'B'){
+            degreeStuden.push({name:students[i].name,degreeGot:degree});
+        }
+    }
+    console.log(degreeStuden);
+}
+
+degreeGot(students)
+
+function sortedStudents(students){
+    let temp =[];
+
+    for(let i=0;i<students.length;i++){
+        const total = totalScore(students[i]);
+        temp.push({name:students[i].name,score:total})
+    }
+    let sortedStudent = temp.sort((a,b)=> {
+        if(a.score>b.score){
+            return -1
+        }
+    })
+    console.log(sortedStudent)
+}
+sortedStudents(students)
+
+function average(students){
+    let averageScore;
+    let sum=0;
+
+    for(let i=0;i<students.length;i++){
+        const total = totalScore(students[i]);
+        sum += total;
+    }
+    averageScore = sum /students.length;
+    console.log("the Average Score:")
+    console.log(averageScore)
 
 }
-result(students)
+average(students)
