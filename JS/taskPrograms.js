@@ -32,6 +32,7 @@ let stud= [ {name:"Vamshi",score:75},{name:"Mahesh",score:47} ]
  console.log(res)
 
  console.log()
+ 
 //  //1. Create an array - students, insert four items, which should be objects and have three properties: name, score1, score2, 
 //     with the following values:
 //     a. Vamshi, 47, 46
@@ -233,13 +234,18 @@ function discount(itemsCart){
 
 // Write a function to calculate total amount per booking.
 
-let ticketBooking = [{movie: "KGF", seats: 3, pricePerSeat: 150}]
+let bookingDetails = [
+            { movie: "KGF", seats: 3, pricePerSeat: 150 },
+            { movie: "Veera", seats: 4, pricePerSeat: 100 },
+            { movie: "SEE", seats: 5, pricePerSeat: 100 }
+        ]
 
-function totalBill(ticketBooking){
-let total =0;
-    for(let i=1;i<=ticketBooking.seats;i++){
-        total= total+ ticketBooking.pricePerSeat;
-    }
-    return total
-}
-console.log(totalBill(ticketBooking))
+        function totalBill(bookingDetails){
+            let total=0;
+            for(let i=0;i<bookingDetails.length;i++){
+                total =bookingDetails[i].seats*(bookingDetails[i].pricePerSeat)
+                console.log("The Amount for Total seats of Movie"+ bookingDetails[i].movie+" amount--> "+total)
+            }
+        }
+
+    totalBill(bookingDetails)
