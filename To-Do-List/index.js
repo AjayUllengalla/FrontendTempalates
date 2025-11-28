@@ -1,38 +1,40 @@
-let text;
-let empty = '';
-let btn = document.createElement("button")
-btn.textContent = "Add"
-document.getElementById("to-add").appendChild(btn)
-btn.classList.add("btn")
-let listItem;
+let btn = document.createElement("button");
+btn.textContent = "Add";
+document.getElementById("to-add").appendChild(btn);
+btn.classList.add("btn");
+
 btn.addEventListener("click", () => {
-    // console.log("hello")
-    listItem = document.createElement("li")
-    text = document.getElementById("input").value
-    listItem.textContent = text
-    // document.getElementById("list-div").appendChild(listItem)
-    document.getElementById("list").appendChild(listItem)
+    let text = document.getElementById("input").value;
+    let listItem = document.createElement("li");
+    listItem.classList.add("li-items");
+    listItem.textContent = text;
 
-    listItem.classList.add("li-items")
+    // Create delete button
+    let btn2 = document.createElement("button");
+    btn2.textContent = "Delete";
+    btn2.classList.add("del-button");
+
     
-    let btn2 = document.createElement("button")
-    btn2.textContent = "Delete"
-    btn2.classList.add("del-button")
-    // document.getElementById("list-div").appendChild(btn2)
-
     btn2.addEventListener("click", () => {
         listItem.remove();
     });
 
-    listItem.appendChild(btn2)
-    document.getElementById("list").appendChild(listItem)
+    // Append delete button inside li
+    listItem.appendChild(btn2);
 
-     document.getElementById("input").value = "";
+    // Append li ONCE only
+    document.getElementById("list").appendChild(listItem);
+
+    document.getElementById("input").value = "";
+
+    let editBtn = document.createElement("button");
+    editBtn.textContent="Edit"
+    listItem.appendChild(editBtn)
+    editBtn.classList.add("editBtn")
+
+    editBtn.addEventListener("click",()=>{
+        document.getElementById("input").value = listItem.textContent
+        
+    })
 });
-// text=document.getElementById("input").value=" ";
-// listItem.textContent=text;
-// document.getElementById("list").appendChild(listItem)
-
-
-
 

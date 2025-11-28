@@ -7,7 +7,7 @@
         background-color: white;
         display: inline-block;
         padding: 30px;
-        margin-top: 23%;
+        margin-top: 10%;
         margin-left: 40%;
         border-radius: 10px;
         
@@ -22,38 +22,53 @@
 
     }
     #input {
+        border: none;
+        outline: none;
         padding: 10px;
         border-radius: 10px;
         text-align: center;
+        background-color: aliceblue;
     }
 
     #list {
-        /* margin-top: 25%; */
         margin-top: 20px;
-        /* text-align: center; */
+        text-align: end;
         list-style: none;
+        /* display: flex;
+        gap: 10px; */
     }
     .li-items {
         background-color: whitesmoke;
         border-radius: 20px;
         margin-top: 10px;
-        text-align: left;
         padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
     .btn {
         background-color: green;
         color: whitesmoke;
-        padding: 10px;
+        padding: 10px 30px;
         font-weight:500;
+
         
     }
     .del-button {
-    
-    padding: 5px;
+    padding: 3px;
     background: aquamarine;
-    border-radius: 10px;
-    font-weight: 600;
+    border-radius: 5px;
+    font-weight: 500;
     color: blueviolet;
+    text-align: end;
+    border: none;
+}
+.editBtn{
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
 }
     /* .btn:hover {
         background-color: red;
