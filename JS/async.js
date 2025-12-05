@@ -64,3 +64,23 @@ promise2.then((res) => {
 promise2.catch((error) => {
     console.log(error); //we get error that condition not satisfied throws error
 })
+
+//async await
+
+function sqr(n){
+    return new Promise((res,rej)=>{
+        res(n*n)
+    })
+}
+
+async function test() {
+    let res = await sqr(2);
+    console.log(res)
+    let res1 = await sqr(res)
+    console.log(res1)
+    let res2 = await sqr(res1)
+    console.log(res2)
+    let res3 = await sqr(res2)
+    console.log(res3)
+}
+test()
