@@ -137,3 +137,28 @@ let str1 = ["Hello","Apple","Bat","Ant"];
 console.log(str1.reverse());
 let arrays =[2,6,15,1,46,25,86,10];
 console.log(arrays.reverse()); //reversing the array
+
+// reduce method in array
+
+let xArray =[2,3,4,5,6,7,8,9]
+let resxArray = xArray.reduce((acc,currentValue)=>{
+    if(currentValue % 2 == 0){
+        return acc + currentValue;
+    }
+    return acc
+},0)
+console.log(resxArray)
+
+let resxArray2 = xArray.reduce((acc,currentValue)=>{
+    if(currentValue % 2 !=0){
+        return acc + currentValue
+    } 
+    return acc
+},0)
+console.log(resxArray2)
+
+// flatten array 
+let flatArrayRes = xArray.flatMap((x)=>{
+    return x * 2
+})
+console.log(flatArrayRes)

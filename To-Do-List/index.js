@@ -22,8 +22,8 @@ btn.addEventListener("click", () => {
     // Append delete button inside li
     listItem.appendChild(btn2);
 
-    // Append li ONCE only
-    document.getElementById("list").appendChild(listItem);
+    
+  document.getElementById("list").appendChild(listItem);
 
     document.getElementById("input").value = "";
 
@@ -34,7 +34,7 @@ btn.addEventListener("click", () => {
 
     editBtn.addEventListener("click",()=>{
         document.getElementById("input").value = listItem.textContent
-        
     })
+      
 });
 

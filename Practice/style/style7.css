@@ -1,0 +1,20 @@
+.parent {
+    position: relative;
+}
+.child {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+}
+
+/* //for only div middle color  */
+
+/* .ntchild p:nth-child(2){
+    color: aqua;
+} */
+
+/* 2-div same color of nth child  */
+p:nth-child(2){
+    color: red
+}

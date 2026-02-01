@@ -1,5 +1,8 @@
  body {
-    background: aqua;
+    margin: 0;
+  min-height: 100vh;
+    background: linear-gradient(black,blueviolet);
+
  }
  
  .back {
@@ -24,10 +27,10 @@
     #input {
         border: none;
         outline: none;
-        padding: 10px;
+        padding: 10px 40px;
         border-radius: 10px;
-        text-align: center;
-        background-color: aliceblue;
+        /* text-align: center; */
+        background: aliceblue;
     }
 
     #list {
@@ -37,25 +40,31 @@
         /* display: flex;
         gap: 10px; */
     }
-    .li-items {
+    .li-items{
         background-color: whitesmoke;
         border-radius: 20px;
         margin-top: 10px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         gap: 10px;
     }
+    .li-items li {
+        font-size: 50px;
+        padding: 10px 40px;
+        
+        
+    }
+   
     .btn {
         background-color: green;
         color: whitesmoke;
-        padding: 10px 30px;
+        padding: 5px 20px;
         font-weight:500;
-
-        
     }
+
     .del-button {
-    padding: 3px;
+    padding: 8px 10px;
     background: aquamarine;
     border-radius: 5px;
     font-weight: 500;
@@ -64,7 +73,7 @@
     border: none;
 }
 .editBtn{
-    padding: 3px;
+    padding: 8px 10px;
     border-radius: 5px;
     border: none;
     background-color: black;
